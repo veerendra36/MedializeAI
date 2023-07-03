@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedClassification</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;900&display=swap" rel="stylesheet">
+    <!-- bootstramp link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- css style sheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <!-- js link for fontawesome -->
+    <script src="https://kit.fontawesome.com/a9ec572da0.js" crossorigin="anonymous"></script> 
+  
+    <!-- icon image link -->
+    <link rel="icon" href="images/logo(1).jpeg">
+  
+  </head>
+
+
+
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="images/logo(1).jpeg" alt="" height="40" width="50">
+      </a>
+      <a class="navbar-brand" href="">Medialize AI</a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#title">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#Results">Results</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#druginfo">Drug Info</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#footer">Get In touch</a>
+              </li>
+          </ul>
+      </div>
+      
+
+  </nav>
+
+
+  
+    <!-- Title -->
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 >Make your self a Doctor</h1>
+        <button type="button" class="btn btn-outline-dark btn-lg download-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-google-play" viewBox="0 0 20 20">
+          <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+        </svg>  Download</button>
+        <button type="button" class="btn btn-outline-dark btn-lg download-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-apple" viewBox="0 0 20 20">
+            
+          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+        </svg>  Download</button></div>
+      
+    
+      <div class="col-lg-6">
+        <img class="main-img" src="images/image3(1).jpeg" alt="drug-classification">
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box1 col-lg-6">
+          <svg  xmlns="http://www.w3.org/2000/svg" height="10em" viewBox="0 0 512 512">
+          <style>svg{fill:#f8fbfb} </style><path d="M220.6 121.2L271.1 96 448 96v96H333.2c-21.9-15.1-48.5-24-77.2-24s-55.2 8.9-77.2 24H64V128H192c9.9 0 19.7-2.3 28.6-6.8zM0 128V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H271.1c-9.9 0-19.7 2.3-28.6 6.8L192 64H160V48c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16l0 16C28.7 64 0 92.7 0 128zM168 304a88 88 0 1 1 176 0 88 88 0 1 1 -176 0z"/></svg>
+          
+          <h3 style="font-size: 35px; font-weight:bolder"><br>
+            <h3 style="font-size: 35px; font-weight:bolder"><b>Capture it</b></h3>
+            
+            
+          <p>Capture your tablet with camera for prediction.</p>
+
+        </div>
+
+        <div class="feature-box2 col-lg-6">
+          <svg xmlns="http://www.w3.org/2000/svg" height="10em" viewBox="0 0 512 512">
+           <style>svg{fill:#111212} </style><path d="M128 64c0-35.3 28.7-64 64-64H352V128c0 17.7 14.3 32 32 32H512V448c0 35.3-28.7 64-64 64H192c-35.3 0-64-28.7-64-64V336H302.1l-39 39c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l39 39H128V64zm0 224v48H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H128zM512 128H384V0L512 128z"/></svg>
+          <h3 style="font-size: 35px; font-weight:bolder"><br><b>Uplaod image</b></h3>
+            
+          <p>Upload the capsule image from device.</p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-dark btn-lg sub-btn">submit</button>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="Results">
+    <div class="results-name">
+      <h1 class="results-h1"> Results </h1>
+      <img class="output-img" src="images\Picture8.png" alt="">
+      <p class="output-name"> Name: Day Zinc </p> 
+      
+    </div>
+    
+
+  </section>
+
+
+  <!-- drug info -->
+  <section id="druginfo">
+    <div class="drug-name">
+      <h1 class="druginfo-h1"> Drug Info </h1>
+      <p class="uses"> Sodium Ascorbate + Zinc (Dayzinc) is used for the treatment and prevention of Vitamin C and Zinc deficiency. It completely reverses symptoms of deficiency. Vitamin C deficiency leads to the development of a well-defined syndrome known as scurvy. This is characterized by capillary fragility, bleeding (especially from small blood vessels and the gums), anemias, cartilage and bone lesions, and slow healing of wounds. Features of Zinc deficiency include growth retardation and defects of rapidly-dividing tissues such as the skin,the immune system and the intestinal mucosa</p>
+    </div>
+    <div class="dosage"> 
+      <h2 class="doasage-h2">Dosage</h2>
+      <p class="dosage-p">Cap: Adult: 1 capsule daily.
+        <br>Chewable Tab: Adult: 2 tablet daily.
+        <br>Children 4-15 years old: 1/2 - 1 tablet.
+        <br>Children > 15 years old: 2 tablet daily.
+        <br>Syrup: Under 2 years old: 2.5 mL (1/2 tsp).
+        <br>2-6 years old: 2.5-5 mL (1/2-1 tsp).
+        <br>7-12 years old: 5-10 mL (1-2 tsp).
+        <br>Oral drops: Children < 3 months: 0.3 mL.
+        <br>Children 3-12 months: 0.6 mL.
+        <br>To be taken once daily or as prescribed by the physician.</p>
+    </div>
+    <div class="dis">    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <h1 class="developers"><b>Developers</b></h1>
+
+
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="testimonial-text"></h2>
+          <img class="testimonial-img" src="images/yogi.jpeg" alt="yogeeswar reddy">
+          <p class="name">YOGEESWAR REDDY</p>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text"></h2>
+          <img class="testimonial-img" src="images/aarthi.jpg" alt="aarthi">        
+          <p class="name">AARTHI</p> 
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text"></h2>
+          <img class="testimonial-img" src="images/pooja.jpg" alt="pooja">        
+          <p class="name">POOJA</p> 
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text"></h2>
+          <img class="testimonial-img" src="images/veerendra.jpg" alt="veerendra">        
+          <p class="name">VEERENDRA</p> 
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <h1 class="developers"><b>clients</b></h1>
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2 class="plan">A Plan for Every one</h2>
+    <p>Simple and affordable price plans for our health.</p>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 pricing-col">
+        <div class="card">
+          <div class="card-header">
+            <h3>Bronze</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>50 Predictions Per Day</p>
+            <p>1 appointment doc Per Month</p>
+            <p class="card-p">Unlimited App Usage</p>
+            
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark price-btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 pricing-col">
+        <div class="card">
+          <div class="card-header">
+            <h3>Silver</h3>
+          </div>
+          <div class="card-body">
+            <h2>$10 / mo</h2>
+            <p>Unlimited Predictions</p>
+            <p>15 Doctor appointment Per Month</p>
+            <p class="card-p">Unlimited App Usage</p>
+            
+            <button type="button" class="btn btn-lg btn-block btn-dark price-btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 pricing-col">
+        <div class="card">
+          <div class="card-header">
+            <h3>Gold</h3>
+          </div>
+          <div class="card-body">
+            <h2>$25 / mo</h2>
+            <p>Personal consultant</p>
+            <p>Unlimited Predictions</p>
+            <p>30 Doctor appointment Per Month</p>
+            <p>Unlimited App Usage</p>
+            <button type="button"class="btn btn-lg btn-block btn-dark price-btn">Sign Up</button>
+          </div>
+      </div>
+      </div>
+    
+    </div>
+    
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-h3">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-outline-dark btn-lg download-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-google-play" viewBox="0 0 20 20">
+      <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+    </svg>  Download</button>
+    <button type="button" class="btn btn-outline-dark btn-lg download-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-apple" viewBox="0 0 20 20">
+        
+      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+    </svg>  Download</button>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    
+    <div class="row footerdiv">
+    <div class="col-lg-4 footer-link">
+        <a class="footer-link1" href="https://www.linkedin.com/in/veerendra-beerala-8a3652213/">LinkedIn </a>
+    </div>
+    <div class="col-lg-4 footer-link">
+        <a class="footer-link2" href="https://github.com/veerendra36">GitHub</a>
+    </div>
+    <div class="col-lg-4 footer-link">
+      <a class="footer-link3" href="https://veerendra36.github.io/resume/">Website</a>
+    </div>
+  </div>
+  <p class="copy-p">© Copyright MedializeAi</p>
+
+  </footer>
+  
+</body>
+
+</html>
